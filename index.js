@@ -1,7 +1,9 @@
 const express = require("express");
 const shortid = require("shortid");
+const cors = require("cors");
 const server = express();
 server.use(express.json());
+server.use(cors());
 let users = [
   {
     id: shortid.generate(),
@@ -103,7 +105,7 @@ server.put("/api/users/:id", (req, res) => {
       quote: req.body.quote,
     });
 
-    res.status(205).json(updatedUser);
+    res.status(200).json(updatedUser);
   }
 });
 
