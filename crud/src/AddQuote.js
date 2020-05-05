@@ -49,6 +49,7 @@ const AddQuote = () => {
             value={addedQuote.quote}
           ></textarea>
           <button type="submit">Submit</button>
+          <button onClick={() => setAddMode(false)}>cancel</button>
         </form>
       )}
       <button onClick={() => setAddMode(true)}>Add a quote</button>

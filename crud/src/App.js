@@ -92,11 +92,12 @@ function App() {
           </form>
         )}
       </div>
-
+      <h1>Quotes</h1>
+      <AddQuote />
       {quote.map((quote) => (
         <div key={quote.id}>
-          <h3>{quote.author}</h3>
-          <h4> {quote.quote}</h4>
+          <h3> "{quote.quote}"</h3>
+          <h3>― {quote.author}</h3>
           <button
             onClick={() => {
               editQuote(quote);
@@ -114,7 +115,6 @@ function App() {
           <br></br>
         </div>
       ))}
-      <AddQuote />
     </div>
   );
 }

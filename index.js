@@ -32,6 +32,35 @@ let users = [
     author: "Mark Twain",
     quote: "If you tell the truth, you don't have to remember anything.",
   },
+  {
+    id: shortid.generate(),
+    author: "Ralph Waldo Emerson",
+    quote:
+      "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+  },
+  {
+    id: shortid.generate(),
+    author: "Albert Camus",
+    quote:
+      "Don’t walk behind me; I may not lead. Don’t walk in front of me; I may not follow. Just walk beside me and be my friend.",
+  },
+  {
+    id: shortid.generate(),
+    author: "George Bernard Shaw",
+    quote:
+      "Imagination is the beginning of creation. You imagine what you desire; you will what you imagine; and at last you create what you will.",
+  },
+  {
+    id: shortid.generate(),
+    author: "Henry David Thoreau",
+    quote:
+      "Success usually comes to those who are too busy to be looking for it.",
+  },
+  {
+    id: shortid.generate(),
+    author: "Napoleon Bonaparte",
+    quote: "Impossible is a word to be found only in the dictionary of fools.",
+  },
 ];
 function getUsers() {
   return users;
