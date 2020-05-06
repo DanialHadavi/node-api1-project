@@ -1,5 +1,8 @@
 {
   "name": "node-api1-project",
+  "engines": {
+    "node": "10.x"
+  },
   "version": "1.0.0",
   "description": "- Building a RESTful API.\r - Performing CRUD operations.\r - Writing API endpoints.",
   "main": "index.js",
