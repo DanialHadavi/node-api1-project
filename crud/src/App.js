@@ -25,8 +25,6 @@ function App() {
   const editQuote = (quote) => {
     setEditing(true);
 
-    // const edit = quote.find((updatedQuote) => updatedQuote.id === quote.id);
-
     setQuoteToEdit(quote);
   };
   const saveEdit = (e) => {
