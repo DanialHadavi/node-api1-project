@@ -93,7 +93,7 @@ function App() {
       <h1>Quotes</h1>
       <AddQuote />
       {quote.map((quote) => (
-        <div key={quote.id}>
+        <div className="quote-card" key={quote.id}>
           <h3> "{quote.quote}"</h3>
           <h3>― {quote.author}</h3>
           <button
