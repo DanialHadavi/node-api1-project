@@ -18,7 +18,7 @@ const AddQuote = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`/api/users`, addedQuote)
+      .post(`https://api1-project.herokuapp.com/api/users`, addedQuote)
       .then((res) => {
         setAddedQuote(res.data);
         reloadPage();
