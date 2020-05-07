@@ -18,7 +18,7 @@ function App() {
   };
   useEffect(() => {
     axios
-      .get("/api/users")
+      .get("https://api1-project.herokuapp.com/api/users")
       .then((res) => setQuote(res.data))
       .then((err) => console.log(err));
   }, []);
@@ -35,7 +35,7 @@ function App() {
     e.preventDefault();
 
     axios
-      .put(`/api/users/${quoteToEdit.id}`, newQuote)
+      .put(`https://api1-project.herokuapp.com/api/users/${quoteToEdit.id}`, newQuote)
       .then((res) => {
         setEditing(false);
         reloadPage();
@@ -44,7 +44,7 @@ function App() {
   };
   const deleteQuote = (quote) => {
     axios
-      .delete(`/api/users/${quote.id}`)
+      .delete(`https://api1-project.herokuapp.com/api/users/${quote.id}`)
       .then((res) => {
         console.log("Quote has been returned", res);
         reloadPage();
