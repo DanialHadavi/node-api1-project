@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://cutewallpaper.org/21/simple-background-designs/Awesome-Collection-Of-Simple-Background-On-Hd-Wallpapers-.jpg");
+   background-image: url("https://storage.googleapis.com/blog-images-backup/0*I-sI3u34g0ydRqyA");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 code {
