@@ -4,6 +4,7 @@ const cors = require("cors");
 const server = express();
 server.use(express.json());
 server.use(cors());
+const port = process.env.PORT || 5600;
 let users = [
   {
     id: shortid.generate(),
@@ -138,6 +139,6 @@ server.put("/api/users/:id", (req, res) => {
   }
 });
 
-server.listen(7000, () => {
-  console.log("server is up on port 7000");
+server.listen(port, () => {
+  console.log("server is up");
 });
